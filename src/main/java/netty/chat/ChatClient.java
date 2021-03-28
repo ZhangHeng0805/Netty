@@ -19,7 +19,6 @@ public class ChatClient {
         this.ip = ip;
         this.port = port;
     }
-
     public void run() {
         EventLoopGroup group = new NioEventLoopGroup(1);
         try {
@@ -40,7 +39,7 @@ public class ChatClient {
 
             ChannelFuture cf = bootstrap.connect(ip, port).sync();
             Channel channel = cf.channel();
-            System.out.println("=====客户端"+channel.localAddress()+" 启动成功=====");
+            System.out.println("=====客户端"+channel.localAddress()+" 启动成功=====\n");
             //客户端输入信息，创建一个扫描器
             Scanner scanner=new Scanner(System.in);
             while (scanner.hasNextLine()){
@@ -56,7 +55,6 @@ public class ChatClient {
         } finally {
             group.shutdownGracefully();
         }
-
 
     }
 }
