@@ -14,7 +14,7 @@ import io.netty.util.concurrent.GlobalEventExecutor;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class NettyServerHandler extends SimpleChannelInboundHandler<String> {
+class NettyServerHandler extends SimpleChannelInboundHandler<String> {
 
     private static ChannelGroup channelGroup=new DefaultChannelGroup(GlobalEventExecutor.INSTANCE);
     SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");

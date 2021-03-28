@@ -7,7 +7,7 @@ import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.channel.SimpleChannelInboundHandler;
 import io.netty.util.CharsetUtil;
 
-public class NettyClientHandler extends SimpleChannelInboundHandler<String> {
+class NettyClientHandler extends SimpleChannelInboundHandler<String> {
 //    @Override
 //    public void channelActive(ChannelHandlerContext ctx) throws Exception {
 ////        super.channelActive(ctx);
