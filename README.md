@@ -11,6 +11,6 @@ server.run(); //启动服务器
 ```
 2. 新建聊天客户端
 ```java
-ChatClient client = new ChantClient("127.0.0.1",8888);  //"127.0.0.1"为服务器的ip地址，8888为服务器的端口号
+ChatClient client = new ChatClient("127.0.0.1",8888);  //"127.0.0.1"为服务器的ip地址，8888为服务器的端口号
 client.run(); //启动客户端
 ```
